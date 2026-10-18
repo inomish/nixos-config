@@ -16,6 +16,9 @@
     rust-analyzer
     rustc
 
+    # Slint
+    slint-lsp
+
     # Nix
     nixd
     alejandra
@@ -44,8 +47,8 @@
         package = inputs.helix.packages.${pkgs.stdenv.hostPlatform.system}.default;
 
         plugins = with inputs.helix-plugins.legacyPackages.${pkgs.stdenv.hostPlatform.system}.helixPlugins; [
-          forest
-          smooth-scroll
+          forest-hx
+          smooth-scroll-hx
         ];
       };
       xdg = {

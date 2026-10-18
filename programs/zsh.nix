@@ -14,6 +14,14 @@
       export NH_FLAKE="${flakeConfig.flakePath}#${flakeConfig.networking.hostName}"
       export EDITOR=hx
 
+      hx() {
+        if [ -n "$TMUX" ]; then
+          command hx "$@"
+        else
+          tmux new-session "hx"
+        fi
+      }
+
       source ${pkgs.zsh-autosuggestions}/share/zsh-autosuggestions/zsh-autosuggestions.zsh
       source ${inputs.zsh-helix-mode}/zsh-helix-mode.plugin.zsh
 

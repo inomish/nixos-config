@@ -13,6 +13,9 @@ other-lines = "info"
 [editor.indent-guides]
 render = true
 
+[editor.lsp]
+display-inlay-hints = true
+
 [keys.insert]
 "C-l" = "move_char_right"
 "C-h" = "move_char_left"

@@ -49,6 +49,10 @@ allFeatures = true
 [language-server.rust-analyzer.config.procMacro]
 enable = true
 
+[[language]]
+name = "slint"
+auto-format = true
+
 # Svelte
 [[language]]
 name = "svelte"

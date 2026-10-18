@@ -1,7 +1,7 @@
 {
   inputs = {
     nixpkgs = {
-      url = "https://channels.nixos.org/nixos-unstable/nixexprs.tar.xz";
+      url = "https://channels.nixos.org/nixpkgs-unstable/nixexprs.tar.xz";
     };
     hjem = {
       url = "github:feel-co/hjem";
@@ -16,7 +16,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     mocktail = {
-      url = "git+https://github.com/coderdayton/nightcap";
+      url = "github:CoderDayton/nightcap";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     zsh-helix-mode = {
@@ -24,7 +24,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     helix = {
-      url = "github:Simon-Weij/helix/steel-event-system";
+      url = "github:inomish/helix/steel-event-system";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nord-tmux = {
