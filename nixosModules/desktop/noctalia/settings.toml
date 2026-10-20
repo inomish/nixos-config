@@ -13,8 +13,8 @@ sound_theme = "freedesktop"
 sound_volume = 0.5
 
 [backdrop]
-blur_intensity = 0.0
-enabled = true
+blur_intensity = 0.5
+enabled = false
 tint_intensity = 0.30000001192092896
 
 [bar]
@@ -102,19 +102,28 @@ refresh_minutes = 15
     use_event_reminders = true
 
 [control_center]
-hidden_tabs = [ "monitor", "weather", "calendar", "screen-time" ]
-show_session_button = true
-show_shortcut_labels = true
-sidebar = "compact"
-sidebar_section = "compact"
+hidden_tabs = [
+    "media",
+    "audio",
+    "monitor",
+    "system",
+    "power",
+    "network",
+    "bluetooth",
+    "weather",
+    "calendar",
+    "notifications",
+    "screen-time"
+]
+show_session_button = false
+show_shortcut_labels = false
+sidebar = "none"
+sidebar_section = "none"
 width = 700
 
     [control_center.calendar]
     show_events_card = true
     show_week_numbers = false
-
-    [[control_center.shortcuts]]
-    type = "wifi"
 
     [[control_center.shortcuts]]
     type = "bluetooth"
@@ -124,6 +133,9 @@ width = 700
 
     [[control_center.shortcuts]]
     type = "power_profile"
+
+    [[control_center.shortcuts]]
+    type = "wifi"
 
 [desktop_widgets]
 enabled = true
@@ -160,7 +172,7 @@ main_axis_padding = 16
 margin_edge = 0
 margin_ends = 0
 pinned = []
-position = "left"
+position = "bottom"
 radius = 16
 radius_bottom_left = 16
 radius_bottom_right = 16
@@ -274,7 +286,7 @@ monitors = []
 tint_intensity = 0.30000001192092896
 transition = [ "fade", "wipe", "disc", "stripes", "zoom", "honeycomb" ]
 transition_duration = 1500.0
-wallpaper = ""
+wallpaper = "/etc/wallpaper.png"
 
 [lockscreen_widgets]
 enabled = false
@@ -288,9 +300,9 @@ widget_order = [ "lockscreen-login-box@HDMI-A-1" ]
 
     [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1"]
     box_height = 196.0
-    box_width = 720.0
+    box_width = 810.0
     cx = 960.0
-    cy = 961.0
+    cy = 898.0
     enabled = true
     output = "HDMI-A-1"
     placement_height = 1080.0
@@ -465,9 +477,6 @@ umbriel_overview_type_to_launch_enabled = false
 
         [shell.launcher.panels]
         ignored = [ "polkit", "setup-wizard", "test", "launcher" ]
-
-        [shell.launcher.providers.wallpaper]
-        prefix = ""
 
     [shell.mpris]
     blacklist = []
@@ -667,6 +676,9 @@ transition = [ "fade", "wipe", "disc", "stripes", "zoom", "honeycomb" ]
 transition_duration = 1500.0
 transition_on_startup = false
 
+    [wallpaper.default]
+    path = "/etc/wallpaper.png"
+
     [wallpaper.automation]
     enabled = false
     interval_seconds = 1800
@@ -675,7 +687,7 @@ transition_on_startup = false
 
 [weather]
 effects = true
-enabled = true
+enabled = false
 refresh_minutes = 30
 unit = "metric"
 

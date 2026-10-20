@@ -33,7 +33,6 @@ in {
       ../../programs/tailscale.nix
       ../../programs/roblox.nix
       ../../programs/tmux.nix
-      ../../programs/concord.nix
       ../../programs/nautilus.nix
       ../../programs/zsh.nix
     ];
