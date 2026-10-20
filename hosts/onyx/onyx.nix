@@ -27,9 +27,8 @@ in {
       ../../programs/chromium.nix
       ../../programs/kitty.nix
       ../../programs/git.nix
+      ../../programs/zsh.nix
       ../../programs/tailscale.nix
-      ../../programs/spotify.nix
-      ../../programs/starship.nix
       ../../programs/tmux.nix
       ../../programs/concord.nix
     ];
