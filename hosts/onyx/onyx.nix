@@ -26,11 +26,12 @@ in {
       ../../helix/default.nix
       ../../programs/chromium.nix
       ../../programs/kitty.nix
+      ../../programs/nautilus.nix
+      ../../programs/claude.nix
       ../../programs/git.nix
       ../../programs/zsh.nix
       ../../programs/tailscale.nix
       ../../programs/tmux.nix
-      ../../programs/concord.nix
     ];
   };
 }
