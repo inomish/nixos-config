@@ -32,6 +32,9 @@ in {
       ../../programs/zsh.nix
       ../../programs/tailscale.nix
       ../../programs/tmux.nix
+      {
+        services.flatpak.enable = true;
+      }
     ];
   };
 }
