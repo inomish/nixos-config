@@ -1,6 +1,6 @@
 {pkgs, ...}: {
   environment.systemPackages = [
-    (pkgs.chromium.override {enableWideVine = true;})
+    pkgs.brave-origin
   ];
 
   programs.chromium = {
@@ -9,10 +9,6 @@
     homepageLocation = "https://www.duckduckgo.com/";
 
     extensions = [
-      "eimadpbcbfnmbkopoojfekhnkhdbieeh;https://clients2.google.com/service/update2/crx" # dark reader
-
-      "ddkjiahejlhfcafbddmgiahcphecmpfh;https://clients2.google.com/service/update2/crx" # ublock
-
       "nngceckbapebfimnlniiiahkandclblb;https://clients2.google.com/service/update2/crx" # bitwarden
 
       "mnjggcdmjocbbbhaepdhchncahnbgone;https://clients2.google.com/service/update2/crx" # sponsorblock
@@ -20,8 +16,6 @@
       "hfjbmagddngcpeloejdejnfgbamkjaeg;https://clients2.google.com/service/update2/crx" # vimium C
 
       "bihgaolammfihpmkpphbngkhdelcnkfa;https://clients2.google.com/service/update2/crx" # Middle click scroll
-
-      "hjfkenebldkfgibelglepinlabpjfbll;https://clients2.google.com/service/update2/crx" # No shorts
     ];
 
     extraOpts = {
@@ -30,6 +24,10 @@
       DefaultSearchProviderSearchURL = "https://duckduckgo.com/?q={searchTerms}";
       DefaultSearchProviderSuggestURL = "https://duckduckgo.com/ac/?q={searchTerms}&type=list";
       DefaultSearchProviderIconURL = "https://duckduckgo.com/favicon.ico";
+      HomepageLocation = "https://www.duckduckgo.com/";
+      NewTabPageLocation = "https://www.duckduckgo.com/";
+      RestoreOnStartupURLs = ["https://www.duckduckgo.com/"];
+
       WebAppInstallForceList = [
         {
           "custom_name" = "Discord";
