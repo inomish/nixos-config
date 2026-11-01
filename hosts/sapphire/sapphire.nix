@@ -31,6 +31,7 @@ in {
       ../../programs/minecraft.nix
       ../../programs/git.nix
       ../../programs/tailscale.nix
+      ../../programs/claude.nix
       ../../programs/roblox.nix
       ../../programs/tmux.nix
       ../../programs/nautilus.nix
