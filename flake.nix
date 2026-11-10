@@ -35,12 +35,19 @@
       url = "https://raw.githubusercontent.com/connorholyday/nord-kitty/master/nord.conf";
       flake = false;
     };
+    brave = {
+      url = "git+https://codeberg.org/buckley310/brave-browser-nix?ref=main";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = inputs @ {self, ...}: let
     defaultModules = with inputs; [
       hjem.nixosModules.default
       helix-plugins.nixosModules.default
+
+      # Thanks nixpkgs, we had too many browsers already <3
+      brave.nixosModules.default
     ];
     mkHost = path: let
       hostConfigs = (import path {inherit inputs self;}).nixosConfigurations;

@@ -3,7 +3,7 @@
     "_CLAUDE_CODE_ASSUME_FIRST_PARTY_BASE_URL": "1",
     "ENABLE_TOOL_SEARCH": "auto"
   },
-  "model": "sonnet",
+  "model": "opus",
   "hooks": {
     "SessionStart": [
       {
@@ -30,7 +30,13 @@
   },
   "enabledPlugins": {
     "gopls-lsp@claude-plugins-official": true,
-    "typescript-lsp@claude-plugins-official": true
+    "typescript-lsp@claude-plugins-official": true,
+    "rust-analyzer-lsp@claude-plugins-official": true
+  },
+  "modelSettings": {
+    "claude-opus-5-5": {
+      "effortLevel": "high"
+    }
   },
   "theme": "dark"
 }

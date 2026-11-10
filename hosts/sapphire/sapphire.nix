@@ -36,6 +36,9 @@ in {
       ../../programs/tmux.nix
       ../../programs/nautilus.nix
       ../../programs/zsh.nix
+      {
+        services.flatpak.enable = true;
+      }
     ];
   };
 }
