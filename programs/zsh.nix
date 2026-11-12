@@ -12,13 +12,13 @@
       KEYTIMEOUT=1
 
       export NH_FLAKE="${flakeConfig.flakePath}#${flakeConfig.networking.hostName}"
-      export EDITOR=hx
+      export EDITOR=ms
 
       hx() {
         if [ -n "$TMUX" ]; then
-          command hx "$@"
+          command ms "$@"
         else
-          tmux new-session "hx"
+          tmux new-session "ms"
         fi
       }
 

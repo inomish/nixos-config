@@ -114,6 +114,27 @@
         "url": "https://raw.githubusercontent.com/connorholyday/nord-kitty/master/nord.conf"
       }
     },
+    "mitos": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1794421300,
+        "narHash": "sha256-box5DiVV/dymJkQqzJUpynOred4tpl6GXD0/Rn0XFvQ=",
+        "owner": "inomish",
+        "repo": "mitos",
+        "rev": "e2c5d980dacee810486dbf03f82488a9fdd15b7b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "inomish",
+        "ref": "smooth-scroll",
+        "repo": "mitos",
+        "type": "github"
+      }
+    },
     "mocktail": {
       "inputs": {
         "flake-parts": "flake-parts",
@@ -186,6 +207,7 @@
         "helix-plugins": "helix-plugins",
         "hjem": "hjem",
         "kitty-nord": "kitty-nord",
+        "mitos": "mitos",
         "mocktail": "mocktail",
         "nixpkgs": "nixpkgs",
         "nord-tmux": "nord-tmux",

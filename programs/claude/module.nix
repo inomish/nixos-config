@@ -4,7 +4,7 @@
   flakeConfig,
   ...
 }: let
-  skillsDir = ./claude/skills;
+  skillsDir = ./skills;
   skillFiles = lib.filesystem.listFilesRecursive skillsDir;
   relPath = file: lib.removePrefix "${toString skillsDir}/" (toString file);
 
@@ -25,7 +25,7 @@ in {
   hjem.users."${flakeConfig.username}".files =
     {
       ".claude/settings.json" = {
-        source = ./claude/settings.json;
+        source = ./settings.json;
         type = "copy";
         permissions = "0644";
       };

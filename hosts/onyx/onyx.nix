@@ -24,10 +24,11 @@ in {
       ../../nixosModules/system/btrfs.nix
 
       ../../helix/default.nix
+      ../../programs/mitos/module.nix
       ../../programs/chromium.nix
       ../../programs/kitty.nix
       ../../programs/nautilus.nix
-      ../../programs/claude.nix
+      ../../programs/claude/module.nix
       ../../programs/git.nix
       ../../programs/zsh.nix
       ../../programs/tailscale.nix

@@ -27,6 +27,10 @@
       url = "github:inomish/helix/steel-event-system";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    mitos = {
+      url = "github:inomish/mitos/smooth-scroll";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     nord-tmux = {
       url = "github:nordtheme/tmux";
       flake = false;
@@ -61,6 +65,11 @@
       )
       hostConfigs;
   in {
+    packages.x86_64-linux.mitos = import ./programs/mitos {
+      inherit inputs;
+      pkgs = inputs.nixpkgs.legacyPackages.x86_64-linux;
+    };
+
     nixosConfigurations =
       mkHost ./hosts/onyx/onyx.nix
       // mkHost ./hosts/sapphire/sapphire.nix;

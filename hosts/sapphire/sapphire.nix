@@ -24,14 +24,14 @@ in {
       ../../nixosModules/system/btrfs.nix
       ../../nixosModules/desktop/umbriel.nix
 
-      ../../helix/default.nix
       ../../programs/chromium.nix
       ../../programs/steam.nix
       ../../programs/kitty.nix
+      ../../programs/mitos/module.nix
       ../../programs/minecraft.nix
       ../../programs/git.nix
       ../../programs/tailscale.nix
-      ../../programs/claude.nix
+      ../../programs/claude/module.nix
       ../../programs/roblox.nix
       ../../programs/tmux.nix
       ../../programs/nautilus.nix
