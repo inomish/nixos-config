@@ -104,7 +104,6 @@ refresh_minutes = 15
 [control_center]
 hidden_tabs = [
     "media",
-    "audio",
     "monitor",
     "system",
     "power",
@@ -112,12 +111,11 @@ hidden_tabs = [
     "bluetooth",
     "weather",
     "calendar",
-    "notifications",
     "screen-time"
 ]
 show_session_button = false
 show_shortcut_labels = false
-sidebar = "none"
+sidebar = "compact"
 sidebar_section = "none"
 width = 700
 
