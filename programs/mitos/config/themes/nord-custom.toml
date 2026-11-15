@@ -1,0 +1,6 @@
+inherits = "nord"
+
+"ui.diagnostic.inline.error" = "nord11"
+"ui.diagnostic.inline.warning" = "nord13"
+"ui.diagnostic.inline.info" = "nord8"
+"ui.diagnostic.inline.hint" = "nord10"

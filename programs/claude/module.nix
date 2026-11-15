@@ -29,6 +29,11 @@ in {
         type = "copy";
         permissions = "0644";
       };
+      ".claude/CLAUDE.md" = {
+        source = ./CLAUDE.md;
+        type = "copy";
+        permissions = "0644";
+      };
     }
     // builtins.listToAttrs skills;
 }

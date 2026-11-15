@@ -28,7 +28,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     mitos = {
-      url = "github:inomish/mitos/smooth-scroll";
+      url = "github:mitos-editor/mitos";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nord-tmux = {

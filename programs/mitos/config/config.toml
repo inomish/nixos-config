@@ -1,4 +1,4 @@
-theme = "nord"
+theme = "nord-custom"
 
 [editor]
 line-number = "relative"
@@ -16,6 +16,9 @@ render = true
 
 [editor.lsp]
 display-inlay-hints = true
+
+[editor.scroll]
+smooth = true
 
 [keys.insert]
 "C-l" = "move_char_right"

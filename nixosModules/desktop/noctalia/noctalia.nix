@@ -26,6 +26,6 @@
     };
   };
   environment.etc."wallpaper.png" = {
-    source = ./stones.jpg;
+    source = ./blue.png;
   };
 }

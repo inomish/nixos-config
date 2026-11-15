@@ -23,7 +23,6 @@ in {
       ../../nixosModules/desktop/umbriel.nix
       ../../nixosModules/system/btrfs.nix
 
-      ../../helix/default.nix
       ../../programs/mitos/module.nix
       ../../programs/chromium.nix
       ../../programs/kitty.nix

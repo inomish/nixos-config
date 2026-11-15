@@ -30,6 +30,7 @@ name = "nix"
 auto-format = true
 formatter.command = "alejandra"
 
+
 # Rust
 [[language]]
 name = "rust"
@@ -40,18 +41,11 @@ language-servers = ["rust-analyzer"]
 [language-server.rust-analyzer]
 command = "rust-analyzer"
 
-[language-server.rust-analyzer.config.cargo]
-targetDir = true
-
-[language-server.rust-analyzer.config.cargo.buildScripts]
-enable = true
-
-[language-server.rust-analyzer.config.cachePriming]
-enable = false
-
 [language-server.rust-analyzer.config.check]
 command = "clippy"
-allTargets = false
+
+[language-server.rust-analyzer.config.cargo]
+allFeatures = true
 
 [language-server.rust-analyzer.config.procMacro]
 enable = true
