@@ -23,9 +23,6 @@ background_blur = false
 zoom = 0.15
 shortcut_keys = "invbwruo"
 
-#[animation]
-#enabled = false
-
 [input.touchpad]
 natural_scroll = true
 

@@ -1,5 +1,4 @@
 {
-  inputs,
   flakeConfig,
   pkgs,
   ...
@@ -14,7 +13,7 @@ in {
         "wheel"
       ];
       initialPassword = "password";
-      shell = pkgs.zsh;
+      shell = pkgs.fish;
     };
   };
 }

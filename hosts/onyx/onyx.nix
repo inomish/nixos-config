@@ -29,12 +29,9 @@ in {
       ../../programs/nautilus.nix
       ../../programs/claude/module.nix
       ../../programs/git.nix
-      ../../programs/zsh.nix
+      ../../programs/fish.nix
       ../../programs/tailscale.nix
       ../../programs/tmux.nix
-      {
-        services.flatpak.enable = true;
-      }
     ];
   };
 }
